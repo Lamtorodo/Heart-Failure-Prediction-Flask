@@ -13,7 +13,7 @@ Link :https://heart-failure-prediction-msd1.herokuapp.com/
 This is a Flask web app which predicts a heart failure based on clinical data.
 You can find more details on the dataset here : https://www.kaggle.com/andrewmvd/heart-failure-clinical-data.
 For this version we choose the K Nearest Neighbour to do our prediction after do our pre-processing treatments and comparing many models.
-You can see how we work by opening the .ipnyb file .
+You can see how we work by opening the .ipynb file .
 
 ## Installation
 To install the required packages and libraries, run this command in the project directory after cloning the repository:
