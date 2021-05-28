@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <title>Heart failure prediction</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+   
+</head>
+
+<body>
+   <div id="wrap">
+      <h1>Predict heart failure</h1>
+
+      <section id="furn" class="frame2">
+
+         <div class="login">
+
+            <form action="{{ url_for('predict')}}" method="post">
+               <table class="entryForm">
+
+                  <tr>
+                     <th>Age：</th>
+                     <td>
+                        <input type="number" name="age" placeholder="Age" required="required">
+                     </td>
+                  </tr>
+
+                  <tr>
+                     <th>Anaemia：</th>
+                     <td>
+                        <select id="anaemia" name="anaemia">
+                           <option value="1">Yes</option>
+                           <option value="0">No</option>
+                        </select>
+                     </td>
+                  </tr>
+
+                  <tr>
+                     <th>Creatinine Phosphokinase</th>
+                     <td>
+                        <input type="number" name="creatinine_phosphokinase" placeholder="Creatinine Phosphokinase" required="required">
+                     </td>
+                  </tr>
+
+                  <tr>
+                     <th>Diabetes：</th>
+                     <td>
+                        <select id="diabetes" name="diabetes">
+                           <option value="1">Yes</option>
+                           <option value="0">No</option>
+                        </select>
+                  </tr>
+
+                  <tr>
+                     <th>Ejection Fraction：</th>
+                     <td>
+                        <input type="number" name="ejection_fraction" placeholder="Ejection Fraction"
+                           required="required" />
+                     </td>
+                  </tr>
+
+                  <tr>
+                     <th>High Blood Pressure：</th>
+                     <td>
+                        <select id="high_blood_pressure" name="high_blood_pressure">
+                           <option value="1">Yes</option>
+                           <option value="0">No</option>
+                        </select>
+                     </td>
+                  </tr>
+
+                  <tr>
+                     <th>Platelets：</th>
+                     <td>
+                        <input type="number" name="platelets" placeholder="Platelets"
+                           required="required" />
+                     </td>
+                  </tr>
+                  <tr>
+                     <th>Serum Creatinine：</th>
+                     <td>
+                        <input type="number" name="serum_creatinine" placeholder="Serum Creatinine"
+                           required="required" />
+                     </td>
+                  </tr>
+
+                  <tr>
+                     <th>Serum Sodium：</th>
+                     <td>
+                        <input type="number" name="serum_sodium" placeholder="Serum Sodium"
+                           required="required" />
+                     </td>
+                  </tr>
+                  <tr>
+                     <th>Sex：</th>
+                     <td>
+                        <select id="sex" name="sex">
+                           <option value="0">Woman</option>
+                           <option value="1">Man</option>
+                        </select>
+                     </td>
+                  </tr>
+
+                  <tr>
+                     <th>Smoking：</th>
+                     <td>
+                        <select id="smoking" name="smoking">
+                           <option value="1">Yes</option>
+                           <option value="0">No</option>
+                        </select>
+                     </td>
+                  </tr>
+
+                  <tr>
+                     <th>Time：</th>
+                     <td>
+                        <input type="number" name="time" placeholder="time"
+                           required="required" />
+                     </td>
+                  </tr>
+               </table>
+               <div class="btns">
+                  <button type="reset" class="btn btn-clear">Reset</button>
+                  <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+               </div>
+            </form>
+
+         </div>
+
+
+      </section>
+
+
+      <br>
+      <br>
+      {{prediction_text}}
+   </div>
+
+</body>
+
+</html>
