@@ -14,7 +14,7 @@ def index():
 def predict():
 
     '''
-    pour l'affichage sur html
+    pour l'affichage  sur une page html
     '''
 
     features = request.form.to_dict()
