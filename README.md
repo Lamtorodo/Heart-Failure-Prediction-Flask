@@ -1,10 +1,10 @@
 # Heart-Failure-Prediction 
 ## Table of content
-* [Demo](https://github.com/Lamtorodo/Heart-Failure-Prediction#demo)
-* [Overview](https://github.com/Lamtorodo/Heart-Failure-Prediction#overview)
-* [Installation](https://github.com/Lamtorodo/Heart-Failure-Prediction#installation)
-* [Bug / Feature Request](https://github.com/Lamtorodo/Heart-Failure-Prediction#bug--feature-request)
-* [Future scope of project](https://github.com/Lamtorodo/Heart-Failure-Prediction#future-scope)
+* [Demo](https://github.com/Lamtorodo/Heart-Failure-Prediction-Flask#demo)
+* [Overview](https://github.com/Lamtorodo/Heart-Failure-Prediction-Flask#overview)
+* [Installation](https://github.com/Lamtorodo/Heart-Failure-Prediction-Flask#installation)
+* [Bug / Feature Request](https://github.com/Lamtorodo/Heart-Failure-Prediction-Flask#bug--feature-request)
+* [Future scope of project](https://github.com/Lamtorodo/Heart-Failure-Prediction-Flask#future-scope)
 
 ## Demo
 Link :https://heart-failure-prediction-msd1.herokuapp.com/ 
@@ -21,7 +21,7 @@ To install the required packages and libraries, run this command in the project 
 
 ## Bug / Feature Request
 
-If you find a bug, kindly open an [issue](https://github.com/Lamtorodo/Heart-Failure-Prediction/issue) here by including your search query and the expected result
+If you find a bug, kindly open an [issue](https://github.com/Lamtorodo/Heart-Failure-Prediction-Flask/issue) here by including your search query and the expected result
 
 ## Future Scope 
 * Test others algorithms
